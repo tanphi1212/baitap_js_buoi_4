@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Sắp xếp thứ tự
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                          <label for="">số thứ 1:  <label>
+                          <input id="no_1" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 2:  <label>
+                            <input id="no_2" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 3:  <label>
+                            <input id="no_3" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <button id="btnTimSLN" class="btn btn-success" onclick="minToMax()">Sắp Xếp</button>
+                    </div>
+                    <div id="infoMinToMax" class="card-footer text-muted">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Chào thành viên
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                          <label for="">Thành viên</label>
+                          <select class="form-control" name="" id="member">
+                            <option>Gửi lời chào</option>
+                            <option value="B">Ba</option>
+                            <option value="M">Mẹ</option>
+                            <option value="A">Anh Trai</option>
+                            <option value="E">Em Gái</option>
+                          </select>
+                        </div>
+                        <button class="btn btn-success" onclick="chao()">Gửi lời chào</button>
+                    </div>
+                    <div id="infoMember" class="card-footer text-muted">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Phân loại tam giác
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                          <label for="">Cạnh a:  <label>
+                          <input id="canhA" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Cạnh b:  <label>
+                            <input id="canhB" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Cạnh c:  <label>
+                            <input id="canhC" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <button  class="btn btn-success" onclick="phanLoaiTamGiac()">Phân loại</button>
+                    </div>
+                    <div id="infoTamGiac" class="card-footer text-muted">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Phân loại tam giác
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                          <label for="">Cạnh a:  <label>
+                          <input id="canhA" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Cạnh b:  <label>
+                            <input id="canhB" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Cạnh c:  <label>
+                            <input id="canhC" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <button  class="btn btn-success" onclick="phanLoaiTamGiac()">Phân loại</button>
+                    </div>
+                    <div id="infoTamGiac" class="card-footer text-muted">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Ngày trước và ngày mai
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                          <label for="">ngày:  <label>
+                          <input id="day" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">tháng:  <label>
+                            <input id="month" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">năm:  <label>
+                            <input id="year" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <button  class="btn btn-success" onclick="ngayHomQua()">Ngày hôm qua</button>
+                        <button  class="btn btn-success" onclick="ngayHomSau()">Ngày hôm sau</button>
+                    </div>
+                    <div id="infoDay" class="card-footer text-muted">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        cho biết số ngày của tháng
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">tháng:  <label>
+                            <input id="thang" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">năm:  <label>
+                            <input id="nam" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <button  class="btn btn-success" onclick="tinhNgay()">Số ngày của tháng</button>
+                    </div>
+                    <div id="infoNgay" class="card-footer text-muted">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        In ra cách đọc
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Số Nguyên Có 3 Chữ Số:  <label>
+                            <input id="soNguyen" value="0" type="text" id="" class="form-control" >
+                        </div>
+                        <button  class="btn btn-success" onclick="inDoc()">Số ngày của tháng</button>
+                    </div>
+                    <div id="infoNguyen" class="card-footer text-muted">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
