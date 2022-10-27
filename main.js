@@ -429,3 +429,50 @@ function inDoc() {
 
     document.getElementById('infoNguyen').innerHTML = doTram + " " + doChuc + " " + doDV;
 }
+
+/**
+ * Tìm học sinh ở xa trường nhất
+ * Đầu vào:
+ * - tên và tọa độ của học sinh 1, 2, 3 và tọa độ trường
+ * Xử lý:
+ * - tính độ khoảng cách của mỗi học sinh đến trường bằng công thức căn bật hai của ((x2-x1)^2+(y2-y1)^2)
+ * - So sánh từ độ dài với nhau =>  độ dài xa nhất => học sinh xa trường nhất
+ * Đầu ra:
+ * xuất ra học sinh xa trường nhất
+ */
+
+
+function maxTruong() {
+    var ten1 = document.getElementById('ten_1').value;
+    var tdX1 = document.getElementById('toa_x_1').value*1;
+    var tdY1 = document.getElementById('toa_y_1').value*1;
+    var ten2 = document.getElementById('ten_2').value;
+    var tdX2 = document.getElementById('toa_x_2').value*1;
+    var tdY2 = document.getElementById('toa_y_2').value*1;
+    var ten3 = document.getElementById('ten_3').value;
+    var tdX3 = document.getElementById('toa_x_3').value*1;
+    var tdY3 = document.getElementById('toa_y_3').value*1;
+    var tdXTruong = document.getElementById('toa_x_truong').value*1;
+    var tdYTruong = document.getElementById('toa_y_truong').value*1;
+
+    var length1 = Math.sqrt((tdXTruong-tdX1)*(tdXTruong-tdX1) +(tdYTruong-tdY1)*(tdYTruong-tdY1));
+    var length2 = Math.sqrt((tdXTruong-tdX2)*(tdXTruong-tdX2) +(tdYTruong-tdY2)*(tdYTruong-tdY2));
+    var length3 = Math.sqrt((tdXTruong-tdX3)*(tdXTruong-tdX3) +(tdYTruong-tdY3)*(tdYTruong-tdY3));
+ 
+    var svXaNhat = ten1;
+    var xaNhat = length1;
+
+    if(xaNhat < length2 ){
+        svXaNhat = ten2;
+        xaNhat = length2;
+    }
+
+    if(xaNhat < length3){
+        svXaNhat = ten3;
+        xaNhat = length3;
+    }
+
+    document.getElementById('infoTruong').innerHTML = 'Sinh vien nhà xa trường nhất là ' + svXaNhat;
+
+}
+
